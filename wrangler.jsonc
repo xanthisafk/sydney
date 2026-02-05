@@ -1,0 +1,24 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "sydney",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-02-05",
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"MASTER_PASSWORD": "your-super-secret-password-here",
+		"S3_ACCESS_KEY_ID": "access-key-here",
+		"S3_SECRET_ACCESS_KEY": "secret-key-here",
+		"S3_BUCKET": "bucket-name",
+		"S3_ENDPOINT": "endpoint-url",
+		"S3_REGION": "s3-reigon",
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "sydney-db",
+			"database_id": "sydney-db-id-goes-here"
+		}
+	]
+}
